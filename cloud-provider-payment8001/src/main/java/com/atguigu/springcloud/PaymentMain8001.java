@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 支付模块启动类
@@ -14,6 +15,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @create 2020/2/17 21:13
  **/
 @SpringBootApplication
+@ComponentScan("com.atguigu.springcloud")
 @EnableEurekaClient
 public class PaymentMain8001 {
     public static void main(String[] args) {
