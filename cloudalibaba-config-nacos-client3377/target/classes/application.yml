@@ -1,0 +1,15 @@
+#spring:
+#  profiles:
+#    active: prod
+##    active: dev # 开发环境
+#    active: test# 测试环境
+#    active: info # 开发环境
+server:
+  port: 3377
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 注册中心

@@ -1,0 +1,18 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: cloud-gateway
+
+eureka:
+  instance:
+    # hostname: localhost
+    hostname: gateway
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      # 集群版
+      defaultZone: http://eureka7001.com:7001/eureka
+    instance:
+      instance-id: gateway
