@@ -145,7 +145,7 @@ public interface AccountApi {
      * @param reqDto
      * @return
      */
-    @ApiOperation(value = "批量加入租户",tags = "tenant",nickname = "addToTenantBatch")
+    @ApiOperation(value = "批量租户",tags = "tenant",nickname = "addToTenantBatch")
     @ApiResponses(value = {@ApiResponse(code = 200, message = "操作是否成功,000000:成功，否则失败")})
     ResultDTO<Boolean> addToTenantBatch(Long id, BatchAddTenantReqDto reqDto);
 
